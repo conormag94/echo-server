@@ -11,7 +11,7 @@ GET /echo.php?message=test HTTP/1.1 [CRLF]
 Host: hostname:portnumber [CRLF]
 [CRLF]
 """
-def form_get_request(message=None):
+def form_get_request(message='The default message'):
     parameter = ''
     if message:
         parameter = '?message=' + message.replace(' ', '%20')
